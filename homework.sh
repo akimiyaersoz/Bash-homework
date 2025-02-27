@@ -23,7 +23,8 @@ function wordpress () {
 	sudo mv wordpress/* /var/www/html
 	sudo chown -R apache:apache /var/www/html
 	sudo chmod -R 755 /var/www/html
-	sudo systemtl restart httpd
+	sudo systemctl restart httpd
+
 
 }
 
@@ -38,8 +39,9 @@ function calculator () {
 function binary () {
 	sudo yum install tree -y
 	sudo yum install -y yum-utils
-	sudo yum-config-manager--add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
-	sudo yum install terrafrom -y
+	sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+	sudo yum install terraform -y
+
 }
 
 k-pop
